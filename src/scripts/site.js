@@ -36,13 +36,13 @@ function CreateOrderTable(data)
 
 function CalculateTotalPriceWithNTC(ntcTable)
 {
-    var totalPrice = 0.00;
+    var totalPrice = 0;
 
     $.each(ntcTable.rows.array, function( index, value ) {
         totalPrice += Number(value.cellsArray[4].cellData);
     }); 
     
-    return totalPrice.toLocaleString("tr");
+    return totalPrice.toLocaleString("tr") + 0;
 }
 
 let bolum1 = ["", "bir", "iki", "üç", "dört", "beş", "altı", "yedi", "sekiz", "dokuz"];
@@ -57,6 +57,9 @@ function NumberToTurkishWord(number)
     if(wholeNumberPart.length > bolum3.length)
         return "Sayı sınır dışında";
 
+    var decimalPart = numberParts[1];
+    var decimalArr = [];
+    
     var wholeNumberArr = [ "lira"];
 
     for(var i = 0; i < wholeNumberPart.length; i++) 
@@ -82,9 +85,6 @@ function NumberToTurkishWord(number)
         if(str)
             wholeNumberArr.push(str + " " + bolum3[i]);
     }
-
-    var decimalPart = numberParts[1];
-    var decimalArr = [];
 
     if(bolum2[decimalPart[0]])
     {
