@@ -36,7 +36,7 @@ function CreateOrderTable(data)
 
 function CalculateTotalPriceWithNTC(ntcTable)
 {
-    var totalPrice = 0;
+    var totalPrice = 0.00;
 
     $.each(ntcTable.rows.array, function( index, value ) {
         totalPrice += Number(value.cellsArray[4].cellData);
