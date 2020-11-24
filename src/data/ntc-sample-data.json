@@ -1,0 +1,47 @@
+{
+    "array":
+    [
+        {
+            "productid": "LT-1449506",
+            "productName": "Super Outfit",
+            "productPrice": 300.45,
+            "qnty": 10
+        },
+        {
+            "productid": "LT-4523632",
+            "productName": "Rocket-Powered Roller Skates",
+            "productPrice": 11367.99,
+            "qnty": 4
+        },
+        {
+            "productid": "TM-2026045",
+            "productName": "Giant Kite Kit",
+            "productPrice": 1099.90,
+            "qnty": 12
+        },
+        {
+            "productid": "LT-1990790",
+            "productName": "Bird Seed",
+            "productPrice": 5.90,
+            "qnty": 55
+        },
+        {
+            "productid": "TLTS-8002604",
+            "productName": "Artificial Rock",
+            "productPrice": 123.99,
+            "qnty": 24
+        },
+        {
+            "productid": "TM-6792415",
+            "productName": "Giant Rubber Band V1",
+            "productPrice": 44.90,
+            "qnty": 5000
+        },
+        {
+            "productid": "LT-8163469",
+            "productName": "Jet Motor",
+            "productPrice": 99999.99,
+            "qnty": 2
+        }
+    ]
+}
